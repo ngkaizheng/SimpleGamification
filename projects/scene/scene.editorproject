@@ -1,9 +1,9 @@
 {
 	"animationGroups": [
+		"Walk.json",
 		"TPose.json",
-		"Run.json",
 		"Object_0.json",
-		"Walk.json"
+		"Run.json"
 	],
 	"cameras": [
 		"camera-05e93a47-ec25-41ad-a1df-16f279c32246.json"
@@ -455,8 +455,8 @@
 	],
 	"sounds": [],
 	"morphTargetManagers": [
-		"15318.json",
 		"15324.json",
+		"15318.json",
 		"15330.json"
 	],
 	"reflectionProbes": [],
