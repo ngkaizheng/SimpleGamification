@@ -1,8 +1,8 @@
 {
 	"animationGroups": [
 		"TPose.json",
-		"Run.json",
 		"Walk.json",
+		"Run.json",
 		"Object_0.json"
 	],
 	"cameras": [
@@ -456,8 +456,8 @@
 	"sounds": [],
 	"morphTargetManagers": [
 		"15318.json",
-		"15324.json",
-		"15330.json"
+		"15330.json",
+		"15324.json"
 	],
 	"reflectionProbes": [],
 	"proceduralTextures": [],
