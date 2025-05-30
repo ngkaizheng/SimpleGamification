@@ -40,7 +40,7 @@
 				"14": 0,
 				"15": 1
 			},
-			"isEnabled": true,
+			"isEnabled": false,
 			"isVisible": true,
 			"infiniteDistance": false,
 			"pickable": true,
@@ -55,7 +55,7 @@
 			"physicsMass": 1,
 			"physicsFriction": 0.2,
 			"physicsRestitution": 0.2,
-			"physicsImpostor": 2,
+			"physicsImpostor": 0,
 			"metadata": {
 				"isPickable": false,
 				"script": {
