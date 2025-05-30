@@ -1,9 +1,9 @@
 {
 	"animationGroups": [
-		"Walk.json",
 		"TPose.json",
+		"Run.json",
 		"Object_0.json",
-		"Run.json"
+		"Walk.json"
 	],
 	"cameras": [
 		"camera-05e93a47-ec25-41ad-a1df-16f279c32246.json"

@@ -34,7 +34,7 @@ var RainController = /** @class */ (function (_super) {
     function RainController() {
         var _this = this;
         // @visibleInInspector("string", "Rain Particle Texture", "/assets/Textures/raindrop.png")
-        _this._rainParticleTexture = "/assets/materials/flare.png";
+        _this._rainParticleTexture = "assets/materials/flare.png";
         _this._isRainy = false;
         _this._rainSystem = null;
         return _this;

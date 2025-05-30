@@ -4,7 +4,7 @@ import { KeyboardEventTypes } from "@babylonjs/core";
 
 export default class RainController extends BABYLON.TransformNode {
     // @visibleInInspector("string", "Rain Particle Texture", "/assets/Textures/raindrop.png")
-    private _rainParticleTexture: string = "/assets/materials/flare.png";
+    private _rainParticleTexture: string = "assets/materials/flare.png";
 
     private _isRainy: boolean = false;
     private _rainSystem: BABYLON.ParticleSystem | null = null;
