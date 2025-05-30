@@ -1,9 +1,9 @@
 {
 	"animationGroups": [
-		"Run.json",
-		"Object_0.json",
+		"Walk.json",
 		"TPose.json",
-		"Walk.json"
+		"Run.json",
+		"Object_0.json"
 	],
 	"cameras": [
 		"camera-05e93a47-ec25-41ad-a1df-16f279c32246.json"
@@ -451,8 +451,8 @@
 	],
 	"sounds": [],
 	"morphTargetManagers": [
-		"15318.json",
 		"15330.json",
+		"15318.json",
 		"15324.json"
 	],
 	"reflectionProbes": [],
@@ -791,9 +791,9 @@
 			],
 			"speed": 2,
 			"position": [
-				30.359102930845072,
-				111.37174227352259,
-				171.7375069988827
+				6.094462357338783,
+				27.0431101826827,
+				37.94735294760986
 			],
 			"upVector": [
 				0,
