@@ -1,9 +1,9 @@
 {
 	"animationGroups": [
+		"Walk.json",
 		"TPose.json",
-		"Run.json",
 		"Object_0.json",
-		"Walk.json"
+		"Run.json"
 	],
 	"cameras": [
 		"camera-05e93a47-ec25-41ad-a1df-16f279c32246.json"
@@ -455,8 +455,8 @@
 	],
 	"sounds": [],
 	"morphTargetManagers": [
-		"15324.json",
 		"15318.json",
+		"15324.json",
 		"15330.json"
 	],
 	"reflectionProbes": [],
@@ -789,15 +789,15 @@
 			"checkCollisions": false,
 			"applyGravity": false,
 			"rotation": [
-				0.4425379653505694,
-				3.2096893838513334,
+				0.5551275649599443,
+				3.321009696351333,
 				0
 			],
 			"speed": 2,
 			"position": [
-				17.388475821282224,
-				41.644274785966836,
-				46.25280944253035
+				4.587661416440003,
+				21.78143997669672,
+				29.592039270899576
 			],
 			"upVector": [
 				0,

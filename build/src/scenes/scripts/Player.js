@@ -116,7 +116,7 @@ var Player = /** @class */ (function (_super) {
     Player.prototype._loadCharacterAndAnimations = function () {
         var _this = this;
         var scene = this.getScene();
-        BABYLON.SceneLoader.ImportMeshAsync("", "/assets/Model/Robot/", "RobotExpressive.glb", scene).then(function (result) {
+        BABYLON.SceneLoader.ImportMeshAsync("", "/scenes/_assets/Model/Robot/", "RobotExpressive.glb", scene).then(function (result) {
             var loadedMeshes = result.meshes[0];
             //set loadedMeshes to children of this.node
             loadedMeshes.parent = _this.node;

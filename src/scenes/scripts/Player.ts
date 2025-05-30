@@ -130,7 +130,7 @@ export default class Player extends BABYLON.TransformNode {
     private _loadCharacterAndAnimations(): void {
         const scene = this.getScene();
 
-        BABYLON.SceneLoader.ImportMeshAsync("", "/assets/Model/Robot/", "RobotExpressive.glb", scene).then((result) => {
+        BABYLON.SceneLoader.ImportMeshAsync("", "/scenes/_assets/Model/Robot/", "RobotExpressive.glb", scene).then((result) => {
             const loadedMeshes = result.meshes[0];
 
             //set loadedMeshes to children of this.node
