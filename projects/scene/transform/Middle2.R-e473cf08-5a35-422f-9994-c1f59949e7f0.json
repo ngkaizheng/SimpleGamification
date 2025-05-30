@@ -1,0 +1,55 @@
+{
+	"tags": null,
+	"position": [
+		-2.23517412911711e-10,
+		0.00189366843551397,
+		1.49011608607807e-10
+	],
+	"rotation": [
+		0,
+		0,
+		0
+	],
+	"rotationQuaternion": [
+		0.0348681099712849,
+		-0.0390055142343044,
+		0.504718959331512,
+		0.861696898937225
+	],
+	"scaling": [
+		0.99999988079071,
+		0.999999701976776,
+		0.99999988079071
+	],
+	"billboardMode": 0,
+	"scalingDeterminant": 1,
+	"infiniteDistance": false,
+	"ignoreNonUniformScaling": false,
+	"reIntegrateRotationIntoRotationQuaternion": false,
+	"name": "Middle2.R",
+	"id": "e473cf08-5a35-422f-9994-c1f59949e7f0",
+	"state": "",
+	"metadata": {},
+	"type": "TransformNode",
+	"uniqueId": 7864,
+	"parentId": "04cc4464-9837-4af0-a0c2-ba65e07c7af0",
+	"localMatrix": {
+		"0": 1,
+		"1": 0,
+		"2": 0,
+		"3": 0,
+		"4": 0,
+		"5": 1,
+		"6": 0,
+		"7": 0,
+		"8": 0,
+		"9": 0,
+		"10": 1,
+		"11": 0,
+		"12": 0,
+		"13": 0,
+		"14": 0,
+		"15": 1
+	},
+	"isEnabled": true
+}

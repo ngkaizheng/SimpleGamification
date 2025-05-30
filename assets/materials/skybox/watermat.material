@@ -1,0 +1,81 @@
+{
+	"tags": null,
+	"diffuseColor": [
+		1,
+		1,
+		1
+	],
+	"specularColor": [
+		0,
+		0,
+		0
+	],
+	"specularPower": 64,
+	"disableLighting": false,
+	"maxSimultaneousLights": 4,
+	"windForce": 6,
+	"windDirection": [
+		0,
+		1
+	],
+	"waveHeight": 0.4,
+	"bumpHeight": 0.4,
+	"bumpSuperimpose": false,
+	"fresnelSeparate": false,
+	"bumpAffectsReflection": false,
+	"waterColor": [
+		0.1,
+		0.1,
+		0.6
+	],
+	"colorBlendFactor": 0.2,
+	"waterColor2": [
+		0.1,
+		0.1,
+		0.6
+	],
+	"colorBlendFactor2": 0.2,
+	"waveLength": 0.1,
+	"waveSpeed": 1,
+	"waveCount": 20,
+	"disableClipPlane": false,
+	"id": "9204c5c8-1747-4824-809b-06ecaca3955e",
+	"name": "watermat",
+	"metadata": {
+		"editorPath": "materials/sky/watermat.material"
+	},
+	"checkReadyOnEveryCall": false,
+	"checkReadyOnlyOnce": false,
+	"state": "",
+	"alpha": 1,
+	"backFaceCulling": true,
+	"cullBackFaces": true,
+	"sideOrientation": 1,
+	"alphaMode": 2,
+	"_needDepthPrePass": false,
+	"disableDepthWrite": false,
+	"disableColorWrite": false,
+	"forceDepthWrite": false,
+	"depthFunction": 0,
+	"separateCullingPass": false,
+	"fogEnabled": true,
+	"pointSize": 1,
+	"zOffset": 0,
+	"zOffsetUnits": 0,
+	"pointsCloud": false,
+	"fillMode": 0,
+	"stencil": {
+		"tags": null,
+		"func": 519,
+		"funcRef": 1,
+		"funcMask": 255,
+		"opStencilFail": 7680,
+		"opDepthFail": 7680,
+		"opStencilDepthPass": 7681,
+		"mask": 255,
+		"enabled": false
+	},
+	"uniqueId": 23058,
+	"customType": "BABYLON.WaterMaterial",
+	"renderList": []
+}

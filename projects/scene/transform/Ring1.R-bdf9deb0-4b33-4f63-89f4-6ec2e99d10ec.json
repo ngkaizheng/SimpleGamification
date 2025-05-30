@@ -1,0 +1,55 @@
+{
+	"tags": null,
+	"position": [
+		-7.45058043039037e-11,
+		0.00426206411793828,
+		8.56816728678211e-10
+	],
+	"rotation": [
+		0,
+		0,
+		0
+	],
+	"rotationQuaternion": [
+		0.575218439102173,
+		0.552901327610016,
+		0.116743020713329,
+		0.5914346575737
+	],
+	"scaling": [
+		1.00000011920929,
+		1.00000023841858,
+		1.00000011920929
+	],
+	"billboardMode": 0,
+	"scalingDeterminant": 1,
+	"infiniteDistance": false,
+	"ignoreNonUniformScaling": false,
+	"reIntegrateRotationIntoRotationQuaternion": false,
+	"name": "Ring1.R",
+	"id": "bdf9deb0-4b33-4f63-89f4-6ec2e99d10ec",
+	"state": "",
+	"metadata": {},
+	"type": "TransformNode",
+	"uniqueId": 7874,
+	"parentId": "71d54388-6a41-461c-bad1-15f1b5a4cc2a",
+	"localMatrix": {
+		"0": 1,
+		"1": 0,
+		"2": 0,
+		"3": 0,
+		"4": 0,
+		"5": 1,
+		"6": 0,
+		"7": 0,
+		"8": 0,
+		"9": 0,
+		"10": 1,
+		"11": 0,
+		"12": 0,
+		"13": 0,
+		"14": 0,
+		"15": 1
+	},
+	"isEnabled": true
+}

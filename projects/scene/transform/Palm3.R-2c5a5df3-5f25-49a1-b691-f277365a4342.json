@@ -1,0 +1,55 @@
+{
+	"tags": null,
+	"position": [
+		-5.9604643443123e-10,
+		0.0137971695512533,
+		-8.94069651646845e-10
+	],
+	"rotation": [
+		0,
+		0,
+		0
+	],
+	"rotationQuaternion": [
+		-0.115108542144299,
+		0.858054637908936,
+		-0.363120824098587,
+		-0.344435036182404
+	],
+	"scaling": [
+		0.99999988079071,
+		1,
+		0.999999940395355
+	],
+	"billboardMode": 0,
+	"scalingDeterminant": 1,
+	"infiniteDistance": false,
+	"ignoreNonUniformScaling": false,
+	"reIntegrateRotationIntoRotationQuaternion": false,
+	"name": "Palm3.R",
+	"id": "2c5a5df3-5f25-49a1-b691-f277365a4342",
+	"state": "",
+	"metadata": {},
+	"type": "TransformNode",
+	"uniqueId": 15377,
+	"parentId": "fd368cff-1446-4071-8247-18aa42536680",
+	"localMatrix": {
+		"0": 1,
+		"1": 0,
+		"2": 0,
+		"3": 0,
+		"4": 0,
+		"5": 1,
+		"6": 0,
+		"7": 0,
+		"8": 0,
+		"9": 0,
+		"10": 1,
+		"11": 0,
+		"12": 0,
+		"13": 0,
+		"14": 0,
+		"15": 1
+	},
+	"isEnabled": true
+}

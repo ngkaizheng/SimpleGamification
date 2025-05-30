@@ -1,0 +1,55 @@
+{
+	"tags": null,
+	"position": [
+		-2.16493481860972e-17,
+		0.00328791886568069,
+		-7.45058043039037e-11
+	],
+	"rotation": [
+		0,
+		0,
+		0
+	],
+	"rotationQuaternion": [
+		0.115165159106255,
+		4.3513566083675e-7,
+		7.13079444381037e-8,
+		0.993346333503723
+	],
+	"scaling": [
+		1,
+		1.00000011920929,
+		1
+	],
+	"billboardMode": 0,
+	"scalingDeterminant": 1,
+	"infiniteDistance": false,
+	"ignoreNonUniformScaling": false,
+	"reIntegrateRotationIntoRotationQuaternion": false,
+	"name": "Abdomen",
+	"id": "8dcdf03a-b140-40b0-96e9-5b57c487ed8b",
+	"state": "",
+	"metadata": {},
+	"type": "TransformNode",
+	"uniqueId": 15312,
+	"parentId": "09e86d4b-c843-4bce-b6a7-a1e267654b2f",
+	"localMatrix": {
+		"0": 1,
+		"1": 0,
+		"2": 0,
+		"3": 0,
+		"4": 0,
+		"5": 1,
+		"6": 0,
+		"7": 0,
+		"8": 0,
+		"9": 0,
+		"10": 1,
+		"11": 0,
+		"12": 0,
+		"13": 0,
+		"14": 0,
+		"15": 1
+	},
+	"isEnabled": true
+}

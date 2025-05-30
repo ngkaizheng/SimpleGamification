@@ -1,0 +1,55 @@
+{
+	"tags": null,
+	"position": [
+		0.00636722007766366,
+		0.000305792083963752,
+		0.000570146774407476
+	],
+	"rotation": [
+		0,
+		0,
+		0
+	],
+	"rotationQuaternion": [
+		-1.0893066004769e-8,
+		0.695549607276917,
+		0.718478083610535,
+		1.15625752528103e-7
+	],
+	"scaling": [
+		1,
+		0.999999821186066,
+		1
+	],
+	"billboardMode": 0,
+	"scalingDeterminant": 1,
+	"infiniteDistance": false,
+	"ignoreNonUniformScaling": false,
+	"reIntegrateRotationIntoRotationQuaternion": false,
+	"name": "Foot.L",
+	"id": "5f9b831b-43a9-4e5e-817a-d2407dac4e6c",
+	"state": "",
+	"metadata": {},
+	"type": "TransformNode",
+	"uniqueId": 15299,
+	"parentId": "36622b88-34d0-4b23-aa2a-4be4f9b33c50",
+	"localMatrix": {
+		"0": 1,
+		"1": 0,
+		"2": 0,
+		"3": 0,
+		"4": 0,
+		"5": 1,
+		"6": 0,
+		"7": 0,
+		"8": 0,
+		"9": 0,
+		"10": 1,
+		"11": 0,
+		"12": 0,
+		"13": 0,
+		"14": 0,
+		"15": 1
+	},
+	"isEnabled": true
+}

@@ -1,0 +1,55 @@
+{
+	"tags": null,
+	"position": [
+		-8.40556402259551e-10,
+		0.000840358203276992,
+		2.2934045287859e-11
+	],
+	"rotation": [
+		0,
+		0,
+		0
+	],
+	"rotationQuaternion": [
+		-0.0545857660472393,
+		-0.689886510372162,
+		0.0692138448357582,
+		0.718530774116516
+	],
+	"scaling": [
+		0.99999988079071,
+		0.99999988079071,
+		1
+	],
+	"billboardMode": 0,
+	"scalingDeterminant": 1,
+	"infiniteDistance": false,
+	"ignoreNonUniformScaling": false,
+	"reIntegrateRotationIntoRotationQuaternion": false,
+	"name": "UpperArm.L",
+	"id": "48e5a06e-201a-4c70-a05e-d0975d8ae4b2",
+	"state": "",
+	"metadata": {},
+	"type": "TransformNode",
+	"uniqueId": 7836,
+	"parentId": "21c6f085-12d6-4a4c-ac6a-8a0ac834bb29",
+	"localMatrix": {
+		"0": 1,
+		"1": 0,
+		"2": 0,
+		"3": 0,
+		"4": 0,
+		"5": 1,
+		"6": 0,
+		"7": 0,
+		"8": 0,
+		"9": 0,
+		"10": 1,
+		"11": 0,
+		"12": 0,
+		"13": 0,
+		"14": 0,
+		"15": 1
+	},
+	"isEnabled": true
+}

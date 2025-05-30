@@ -1,0 +1,55 @@
+{
+	"tags": null,
+	"position": [
+		2.22044599961948e-18,
+		0.00131475238595158,
+		-1.11022299980974e-18
+	],
+	"rotation": [
+		0,
+		0,
+		0
+	],
+	"rotationQuaternion": [
+		-8.32667268468867e-17,
+		5.20417042793042e-18,
+		-1.04083408558608e-17,
+		1
+	],
+	"scaling": [
+		1,
+		1,
+		1
+	],
+	"billboardMode": 0,
+	"scalingDeterminant": 1,
+	"infiniteDistance": false,
+	"ignoreNonUniformScaling": false,
+	"reIntegrateRotationIntoRotationQuaternion": false,
+	"name": "Ring2.L_end",
+	"id": "2d126cc5-ac4b-4eba-9e0f-7ae708710cfa",
+	"state": "",
+	"metadata": {},
+	"type": "TransformNode",
+	"uniqueId": 7854,
+	"parentId": "afb9de9d-c08c-4431-9934-afd31e33b694",
+	"localMatrix": {
+		"0": 1,
+		"1": 0,
+		"2": 0,
+		"3": 0,
+		"4": 0,
+		"5": 1,
+		"6": 0,
+		"7": 0,
+		"8": 0,
+		"9": 0,
+		"10": 1,
+		"11": 0,
+		"12": 0,
+		"13": 0,
+		"14": 0,
+		"15": 1
+	},
+	"isEnabled": true
+}

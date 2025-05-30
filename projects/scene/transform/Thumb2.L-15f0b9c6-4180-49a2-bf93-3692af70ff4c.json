@@ -1,0 +1,55 @@
+{
+	"tags": null,
+	"position": [
+		-5.9604643443123e-10,
+		0.00136672763619572,
+		8.94069651646845e-10
+	],
+	"rotation": [
+		0,
+		0,
+		0
+	],
+	"rotationQuaternion": [
+		-0.248973712325096,
+		0.627184391021729,
+		0.630886435508728,
+		-0.382928371429443
+	],
+	"scaling": [
+		0.999999940395355,
+		0.99999988079071,
+		1
+	],
+	"billboardMode": 0,
+	"scalingDeterminant": 1,
+	"infiniteDistance": false,
+	"ignoreNonUniformScaling": false,
+	"reIntegrateRotationIntoRotationQuaternion": false,
+	"name": "Thumb2.L",
+	"id": "15f0b9c6-4180-49a2-bf93-3692af70ff4c",
+	"state": "",
+	"metadata": {},
+	"type": "TransformNode",
+	"uniqueId": 7845,
+	"parentId": "b7bf7b31-8118-4598-a12a-8f50dd13dd87",
+	"localMatrix": {
+		"0": 1,
+		"1": 0,
+		"2": 0,
+		"3": 0,
+		"4": 0,
+		"5": 1,
+		"6": 0,
+		"7": 0,
+		"8": 0,
+		"9": 0,
+		"10": 1,
+		"11": 0,
+		"12": 0,
+		"13": 0,
+		"14": 0,
+		"15": 1
+	},
+	"isEnabled": true
+}

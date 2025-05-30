@@ -1,0 +1,59 @@
+{
+	"tags": null,
+	"position": [
+		-0.0000319546306855045,
+		0.00195048085879534,
+		-0.0000588517395954113
+	],
+	"rotation": [
+		0,
+		0,
+		0
+	],
+	"rotationQuaternion": [
+		0.707106828689575,
+		1.6858743379089e-7,
+		1.6858740536918e-7,
+		0.707106709480286
+	],
+	"scaling": [
+		1,
+		1,
+		1
+	],
+	"billboardMode": 0,
+	"scalingDeterminant": 1,
+	"infiniteDistance": false,
+	"ignoreNonUniformScaling": false,
+	"reIntegrateRotationIntoRotationQuaternion": false,
+	"name": "Bone",
+	"id": "36622b88-34d0-4b23-aa2a-4be4f9b33c50",
+	"state": "",
+	"metadata": {
+		"script": {
+			"name": "None"
+		}
+	},
+	"type": "TransformNode",
+	"uniqueId": 15298,
+	"parentId": "f50c0aeb-64c8-44aa-81a1-c44471fded30",
+	"localMatrix": {
+		"0": 1,
+		"1": 0,
+		"2": 0,
+		"3": 0,
+		"4": 0,
+		"5": 1,
+		"6": 0,
+		"7": 0,
+		"8": 0,
+		"9": 0,
+		"10": 1,
+		"11": 0,
+		"12": 0,
+		"13": 0,
+		"14": 0,
+		"15": 1
+	},
+	"isEnabled": true
+}

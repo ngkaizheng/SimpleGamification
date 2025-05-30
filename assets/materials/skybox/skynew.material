@@ -1,0 +1,67 @@
+{
+	"tags": null,
+	"luminance": 1,
+	"turbidity": 10,
+	"rayleigh": 2,
+	"mieCoefficient": 0.005,
+	"mieDirectionalG": 0.8,
+	"distance": 500,
+	"inclination": 0.49,
+	"azimuth": 0.25,
+	"sunPosition": [
+		3.060106274696685e-14,
+		15.70537953906416,
+		-499.7532801828658
+	],
+	"useSunPosition": false,
+	"cameraOffset": [
+		0,
+		0,
+		0
+	],
+	"up": [
+		0,
+		1,
+		0
+	],
+	"dithering": false,
+	"id": "a43e020c-227a-4ad6-baa3-5ed74016bc43",
+	"name": "skynew",
+	"metadata": {
+		"editorPath": "materials/sky/skynew.material"
+	},
+	"checkReadyOnEveryCall": false,
+	"checkReadyOnlyOnce": false,
+	"state": "",
+	"alpha": 1,
+	"backFaceCulling": true,
+	"cullBackFaces": true,
+	"sideOrientation": 1,
+	"alphaMode": 2,
+	"_needDepthPrePass": false,
+	"disableDepthWrite": false,
+	"disableColorWrite": false,
+	"forceDepthWrite": false,
+	"depthFunction": 0,
+	"separateCullingPass": false,
+	"fogEnabled": true,
+	"pointSize": 1,
+	"zOffset": 0,
+	"zOffsetUnits": 0,
+	"pointsCloud": false,
+	"fillMode": 0,
+	"transparencyMode": 0,
+	"stencil": {
+		"tags": null,
+		"func": 519,
+		"funcRef": 1,
+		"funcMask": 255,
+		"opStencilFail": 7680,
+		"opDepthFail": 7680,
+		"opStencilDepthPass": 7681,
+		"mask": 255,
+		"enabled": false
+	},
+	"uniqueId": 23057,
+	"customType": "BABYLON.SkyMaterial"
+}

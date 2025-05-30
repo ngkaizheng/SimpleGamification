@@ -1,0 +1,55 @@
+{
+	"tags": null,
+	"position": [
+		0.00582737708464265,
+		0.00296720257028937,
+		0.000324412976624444
+	],
+	"rotation": [
+		0,
+		0,
+		0
+	],
+	"rotationQuaternion": [
+		0.0114497225731611,
+		0.0532470792531967,
+		0.976199805736542,
+		-0.209922701120377
+	],
+	"scaling": [
+		1.00000011920929,
+		1,
+		1
+	],
+	"billboardMode": 0,
+	"scalingDeterminant": 1,
+	"infiniteDistance": false,
+	"ignoreNonUniformScaling": false,
+	"reIntegrateRotationIntoRotationQuaternion": false,
+	"name": "Shoulder.L",
+	"id": "d4a20e4b-f996-44df-95f9-1dd55e0414d9",
+	"state": "",
+	"metadata": {},
+	"type": "TransformNode",
+	"uniqueId": 15337,
+	"parentId": "6a5ef816-dfa9-4467-851b-fd2942f471b3",
+	"localMatrix": {
+		"0": 1,
+		"1": 0,
+		"2": 0,
+		"3": 0,
+		"4": 0,
+		"5": 1,
+		"6": 0,
+		"7": 0,
+		"8": 0,
+		"9": 0,
+		"10": 1,
+		"11": 0,
+		"12": 0,
+		"13": 0,
+		"14": 0,
+		"15": 1
+	},
+	"isEnabled": true
+}

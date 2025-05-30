@@ -1,0 +1,55 @@
+{
+	"tags": null,
+	"position": [
+		2.23517412911711e-10,
+		0.00189366622362286,
+		5.9604643443123e-10
+	],
+	"rotation": [
+		0,
+		0,
+		0
+	],
+	"rotationQuaternion": [
+		0.138602823019028,
+		0.0249030161648989,
+		0.427062958478928,
+		0.893188834190369
+	],
+	"scaling": [
+		0.999999642372131,
+		0.999999940395355,
+		0.99999988079071
+	],
+	"billboardMode": 0,
+	"scalingDeterminant": 1,
+	"infiniteDistance": false,
+	"ignoreNonUniformScaling": false,
+	"reIntegrateRotationIntoRotationQuaternion": false,
+	"name": "Ring2.R",
+	"id": "385a9564-0aa8-40d2-b072-790b18667fbc",
+	"state": "",
+	"metadata": {},
+	"type": "TransformNode",
+	"uniqueId": 15379,
+	"parentId": "3b6f5cbd-d01e-45ae-b743-b9b343a1d068",
+	"localMatrix": {
+		"0": 1,
+		"1": 0,
+		"2": 0,
+		"3": 0,
+		"4": 0,
+		"5": 1,
+		"6": 0,
+		"7": 0,
+		"8": 0,
+		"9": 0,
+		"10": 1,
+		"11": 0,
+		"12": 0,
+		"13": 0,
+		"14": 0,
+		"15": 1
+	},
+	"isEnabled": true
+}

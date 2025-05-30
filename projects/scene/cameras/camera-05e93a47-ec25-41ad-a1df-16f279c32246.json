@@ -1,0 +1,100 @@
+{
+	"tags": "modified",
+	"ellipsoid": [
+		0.5,
+		1,
+		0.5
+	],
+	"ellipsoidOffset": [
+		0,
+		0,
+		0
+	],
+	"checkCollisions": false,
+	"applyGravity": false,
+	"rotation": [
+		0.2762039950515353,
+		2.3241248440925952,
+		0
+	],
+	"speed": 0.1,
+	"position": [
+		-3.675588317296887,
+		1.4283228400791863,
+		3.4470882602435227
+	],
+	"upVector": [
+		0,
+		1,
+		0
+	],
+	"fov": 0.9,
+	"projectionPlaneTilt": 0,
+	"minZ": 1,
+	"maxZ": 11084189.100265503,
+	"inertia": 0,
+	"mode": 0,
+	"layerMask": 268435455,
+	"fovMode": 0,
+	"cameraRigMode": 0,
+	"name": "camera",
+	"id": "05e93a47-ec25-41ad-a1df-16f279c32246",
+	"state": "",
+	"metadata": {
+		"script": {
+			"name": "None",
+			"properties": {
+				"playerNode": {
+					"type": "Node",
+					"value": "62e1748d-ec49-45b6-98ff-b1a203b187c3"
+				},
+				"cameraNode": {
+					"type": "Node",
+					"value": "05e93a47-ec25-41ad-a1df-16f279c32246"
+				}
+			}
+		}
+	},
+	"uniqueId": 28,
+	"type": "UniversalCamera",
+	"inputsmgr": {
+		"FreeCameraKeyboardMoveInput": {
+			"tags": null,
+			"keysUp": [
+				192
+			],
+			"keysUpward": [
+				192
+			],
+			"keysDown": [
+				192
+			],
+			"keysDownward": [
+				192
+			],
+			"keysLeft": [
+				192
+			],
+			"keysRight": [
+				192
+			],
+			"rotationSpeed": 0.5,
+			"keysRotateLeft": [],
+			"keysRotateRight": [],
+			"keysRotateUp": [],
+			"keysRotateDown": []
+		},
+		"FreeCameraMouseInput": {
+			"tags": null,
+			"buttons": [
+				0,
+				1,
+				2
+			],
+			"angularSensibility": 0
+		}
+	},
+	"animations": [],
+	"ranges": [],
+	"isEnabled": true
+}

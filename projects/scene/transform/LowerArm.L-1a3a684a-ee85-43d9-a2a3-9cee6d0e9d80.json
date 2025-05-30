@@ -1,0 +1,55 @@
+{
+	"tags": null,
+	"position": [
+		3.72529021519519e-11,
+		0.00657292222604156,
+		2.91969626253774e-9
+	],
+	"rotation": [
+		0,
+		0,
+		0
+	],
+	"rotationQuaternion": [
+		0.309992402791977,
+		0.499337494373322,
+		-0.364940166473389,
+		0.722070276737213
+	],
+	"scaling": [
+		1.00000023841858,
+		1.00000011920929,
+		1.00000035762787
+	],
+	"billboardMode": 0,
+	"scalingDeterminant": 1,
+	"infiniteDistance": false,
+	"ignoreNonUniformScaling": false,
+	"reIntegrateRotationIntoRotationQuaternion": false,
+	"name": "LowerArm.L",
+	"id": "1a3a684a-ee85-43d9-a2a3-9cee6d0e9d80",
+	"state": "",
+	"metadata": {},
+	"type": "TransformNode",
+	"uniqueId": 15343,
+	"parentId": "40e20ccc-3f99-4d09-96b6-84024de96478",
+	"localMatrix": {
+		"0": 1,
+		"1": 0,
+		"2": 0,
+		"3": 0,
+		"4": 0,
+		"5": 1,
+		"6": 0,
+		"7": 0,
+		"8": 0,
+		"9": 0,
+		"10": 1,
+		"11": 0,
+		"12": 0,
+		"13": 0,
+		"14": 0,
+		"15": 1
+	},
+	"isEnabled": true
+}

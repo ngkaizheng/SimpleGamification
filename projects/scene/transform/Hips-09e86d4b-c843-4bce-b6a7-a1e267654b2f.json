@@ -1,0 +1,55 @@
+{
+	"tags": null,
+	"position": [
+		-0.0000205049836949911,
+		-0.000965745421126485,
+		-0.00112671672832221
+	],
+	"rotation": [
+		0,
+		0,
+		0
+	],
+	"rotationQuaternion": [
+		-0.118955060839653,
+		-2.65790362163898e-7,
+		-5.33846673533844e-8,
+		0.992899656295776
+	],
+	"scaling": [
+		1,
+		1,
+		0.999999940395355
+	],
+	"billboardMode": 0,
+	"scalingDeterminant": 1,
+	"infiniteDistance": false,
+	"ignoreNonUniformScaling": false,
+	"reIntegrateRotationIntoRotationQuaternion": false,
+	"name": "Hips",
+	"id": "09e86d4b-c843-4bce-b6a7-a1e267654b2f",
+	"state": "",
+	"metadata": {},
+	"type": "TransformNode",
+	"uniqueId": 15311,
+	"parentId": "4beeb5b2-290a-46c2-a054-bd3f52451e9f",
+	"localMatrix": {
+		"0": 1,
+		"1": 0,
+		"2": 0,
+		"3": 0,
+		"4": 0,
+		"5": 1,
+		"6": 0,
+		"7": 0,
+		"8": 0,
+		"9": 0,
+		"10": 1,
+		"11": 0,
+		"12": 0,
+		"13": 0,
+		"14": 0,
+		"15": 1
+	},
+	"isEnabled": true
+}

@@ -1,0 +1,55 @@
+{
+	"tags": null,
+	"position": [
+		-2.98023217215615e-10,
+		0.00189366703853011,
+		-6.70552224857346e-10
+	],
+	"rotation": [
+		0,
+		0,
+		0
+	],
+	"rotationQuaternion": [
+		-0.0425871945917606,
+		-0.0183796267956495,
+		-0.699962317943573,
+		0.712671935558319
+	],
+	"scaling": [
+		0.999999940395355,
+		1,
+		1
+	],
+	"billboardMode": 0,
+	"scalingDeterminant": 1,
+	"infiniteDistance": false,
+	"ignoreNonUniformScaling": false,
+	"reIntegrateRotationIntoRotationQuaternion": false,
+	"name": "Index2.L",
+	"id": "d1bd3785-cf78-4bc9-a5fe-342215d88c31",
+	"state": "",
+	"metadata": {},
+	"type": "TransformNode",
+	"uniqueId": 15353,
+	"parentId": "567a500f-b873-434e-b80f-1f7e0d65567f",
+	"localMatrix": {
+		"0": 1,
+		"1": 0,
+		"2": 0,
+		"3": 0,
+		"4": 0,
+		"5": 1,
+		"6": 0,
+		"7": 0,
+		"8": 0,
+		"9": 0,
+		"10": 1,
+		"11": 0,
+		"12": 0,
+		"13": 0,
+		"14": 0,
+		"15": 1
+	},
+	"isEnabled": true
+}

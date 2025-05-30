@@ -1,0 +1,55 @@
+{
+	"tags": null,
+	"position": [
+		-5.05151457675601e-17,
+		0.00484584365040064,
+		-3.72528986825049e-11
+	],
+	"rotation": [
+		0,
+		0,
+		0
+	],
+	"rotationQuaternion": [
+		0.0582748763263226,
+		-8.30917997518554e-7,
+		1.3032783741096e-8,
+		0.998300552368164
+	],
+	"scaling": [
+		1,
+		0.999999940395355,
+		1
+	],
+	"billboardMode": 0,
+	"scalingDeterminant": 1,
+	"infiniteDistance": false,
+	"ignoreNonUniformScaling": false,
+	"reIntegrateRotationIntoRotationQuaternion": false,
+	"name": "Torso",
+	"id": "136791ad-7c0e-45ca-8a9a-905f3419b5ef",
+	"state": "",
+	"metadata": {},
+	"type": "TransformNode",
+	"uniqueId": 7809,
+	"parentId": "9344f9a5-2ea5-4635-a084-fd10930c0de7",
+	"localMatrix": {
+		"0": 1,
+		"1": 0,
+		"2": 0,
+		"3": 0,
+		"4": 0,
+		"5": 1,
+		"6": 0,
+		"7": 0,
+		"8": 0,
+		"9": 0,
+		"10": 1,
+		"11": 0,
+		"12": 0,
+		"13": 0,
+		"14": 0,
+		"15": 1
+	},
+	"isEnabled": true
+}

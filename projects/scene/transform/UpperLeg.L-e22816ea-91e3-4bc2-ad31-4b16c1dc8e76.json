@@ -1,0 +1,55 @@
+{
+	"tags": null,
+	"position": [
+		0.00628246134147048,
+		0.000962254998739809,
+		-0.00182560901157558
+	],
+	"rotation": [
+		0,
+		0,
+		0
+	],
+	"rotationQuaternion": [
+		0.977612316608429,
+		0.0216438472270966,
+		-0.0834227576851845,
+		0.191953882575035
+	],
+	"scaling": [
+		1,
+		1.00000178813934,
+		1.00001561641693
+	],
+	"billboardMode": 0,
+	"scalingDeterminant": 1,
+	"infiniteDistance": false,
+	"ignoreNonUniformScaling": false,
+	"reIntegrateRotationIntoRotationQuaternion": false,
+	"name": "UpperLeg.L",
+	"id": "e22816ea-91e3-4bc2-ad31-4b16c1dc8e76",
+	"state": "",
+	"metadata": {},
+	"type": "TransformNode",
+	"uniqueId": 7877,
+	"parentId": "d9371bf5-4f1d-4fa0-891d-38213d455830",
+	"localMatrix": {
+		"0": 1,
+		"1": 0,
+		"2": 0,
+		"3": 0,
+		"4": 0,
+		"5": 1,
+		"6": 0,
+		"7": 0,
+		"8": 0,
+		"9": 0,
+		"10": 1,
+		"11": 0,
+		"12": 0,
+		"13": 0,
+		"14": 0,
+		"15": 1
+	},
+	"isEnabled": true
+}

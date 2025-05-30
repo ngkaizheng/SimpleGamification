@@ -1,0 +1,55 @@
+{
+	"tags": null,
+	"position": [
+		-0.0110091222450137,
+		0.010580837726593,
+		0.0170948728919029
+	],
+	"rotation": [
+		0,
+		0,
+		0
+	],
+	"rotationQuaternion": [
+		5.28460681250083e-37,
+		1.19209289550781e-7,
+		-4.43304949841989e-30,
+		1
+	],
+	"scaling": [
+		1,
+		1,
+		1
+	],
+	"billboardMode": 0,
+	"scalingDeterminant": 1,
+	"infiniteDistance": false,
+	"ignoreNonUniformScaling": false,
+	"reIntegrateRotationIntoRotationQuaternion": false,
+	"name": "PoleTarget.R",
+	"id": "32826e11-5a16-43d5-aa66-d0be9343dfff",
+	"state": "",
+	"metadata": {},
+	"type": "TransformNode",
+	"uniqueId": 15401,
+	"parentId": "36622b88-34d0-4b23-aa2a-4be4f9b33c50",
+	"localMatrix": {
+		"0": 1,
+		"1": 0,
+		"2": 0,
+		"3": 0,
+		"4": 0,
+		"5": 1,
+		"6": 0,
+		"7": 0,
+		"8": 0,
+		"9": 0,
+		"10": 1,
+		"11": 0,
+		"12": 0,
+		"13": 0,
+		"14": 0,
+		"15": 1
+	},
+	"isEnabled": true
+}
