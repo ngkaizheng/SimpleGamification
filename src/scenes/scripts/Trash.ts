@@ -144,7 +144,7 @@ export default class Trash extends BABYLON.TransformNode {
 
         for (let i = 0; i < this._spawnCount; i++) {
             try {
-                const promise = BABYLON.SceneLoader.ImportMeshAsync("", "/assets/Model/Bottle/", "plastic_bottle.glb", scene).then((result) => {
+                const promise = BABYLON.SceneLoader.ImportMeshAsync("", "assets/Model/Bottle/", "plastic_bottle.glb", scene).then((result) => {
                     const loadedMesh = result.meshes[0] as BABYLON.Mesh;
 
                     // Create invisible box collider

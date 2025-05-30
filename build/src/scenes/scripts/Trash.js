@@ -186,7 +186,7 @@ var Trash = /** @class */ (function (_super) {
                         trashPromises = [];
                         _loop_1 = function (i) {
                             try {
-                                var promise = BABYLON.SceneLoader.ImportMeshAsync("", "/assets/Model/Bottle/", "plastic_bottle.glb", scene).then(function (result) {
+                                var promise = BABYLON.SceneLoader.ImportMeshAsync("", "assets/Model/Bottle/", "plastic_bottle.glb", scene).then(function (result) {
                                     var loadedMesh = result.meshes[0];
                                     // Create invisible box collider
                                     var collisionBox = BABYLON.MeshBuilder.CreateBox("trash_".concat(i, "_box"), {
