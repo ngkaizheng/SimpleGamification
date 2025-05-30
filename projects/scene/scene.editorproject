@@ -2,8 +2,8 @@
 	"animationGroups": [
 		"TPose.json",
 		"Run.json",
-		"Walk.json",
-		"Object_0.json"
+		"Object_0.json",
+		"Walk.json"
 	],
 	"cameras": [
 		"camera-05e93a47-ec25-41ad-a1df-16f279c32246.json"
@@ -194,13 +194,13 @@
 		"Water_002_NORM.jpg-079a6a13-07cc-4f32-a063-aa3ed2df2319.json",
 		"Material.002 (Base Color).jpeg-0dc0e096-5283-4837-b2f4-7b9b31505de4.json",
 		"Door1 (Base Color).jpeg-9fb2da25-63f8-422c-9df1-1ab0200e65bd.json",
-		"TCom_Sand_Muddy2_2x2_1K_height.png-b949ef06-6ede-4311-a7f6-8a51e566e1b4.json",
-		"sky_14_2k.png-2f387878-0e75-44e6-ab19-129a7994f31e.json"
+		"TCom_Sand_Muddy2_2x2_1K_height.png-b949ef06-6ede-4311-a7f6-8a51e566e1b4.json"
 	],
 	"meshes": [
 		"ground-eee4645a-645f-4faf-b10b-868d396f01f0.json",
 		"cube-e22f3d3a-65b2-4993-8c52-cb05d2af8278.json",
 		"sky-6a927ea7-51d9-4248-9b80-4d34b53b386e.json",
+		"New Cube-8d697f48-27de-42ab-8876-6fa0fe9d334f.json",
 		"New Sphere-759a914c-4ec3-4cac-99ee-0739f535f2cf.json",
 		"__root__-b1e5a8f7-8e90-4853-838a-5442fe378054.json",
 		"Foot.L-eb27f75e-60e1-4618-a7fc-01f1b01c3838.json",
@@ -256,12 +256,13 @@
 		"2_Door1_0-ea433f74-2115-47f8-ad23-8e846bba54df.json",
 		"3_Door1_0-e0ae4970-d821-4440-8792-ab0a823b3e30.json",
 		"New Cylinder-de73181e-5c46-4a85-bd5a-3234ef648188.json",
-		"New Cylinder-522a0df2-e7cc-4d72-a546-1246b0bf130a.json",
-		"New Cube-8d697f48-27de-42ab-8876-6fa0fe9d334f.json"
+		"New Cylinder-522a0df2-e7cc-4d72-a546-1246b0bf130a.json"
 	],
 	"transformNodes": [
 		"Player-62e1748d-ec49-45b6-98ff-b1a203b187c3.json",
+		"SkyController-331ca134-74d1-43ed-bc77-140fa193d870.json",
 		"GameController-73f9b1e6-6a2a-4750-8f2a-b4adf3c6319c.json",
+		"RainController-6bb6c628-0300-4fa7-8fea-22b015b4015d.json",
 		"Camera-7c754ea7-ec3c-4ff3-97cf-421fe30cf185.json",
 		"Bone-736a9981-e4d3-4e7f-8b5d-c447b8f3cd92.json",
 		"Foot.L-c3d82eca-e325-46ee-ba9d-b2a3781f77a9.json",
@@ -436,9 +437,7 @@
 		"Cube-2ccecb09-a407-45df-b773-feab6b8e7026.json",
 		"1-6dc75bc0-f75a-4f22-8c78-1f894c761d56.json",
 		"2-ad6fbbf5-34fd-473e-a03f-773922ff8b96.json",
-		"3-f829594d-8738-4d48-801f-5dff800a0935.json",
-		"SkyController-331ca134-74d1-43ed-bc77-140fa193d870.json",
-		"RainController-6bb6c628-0300-4fa7-8fea-22b015b4015d.json"
+		"3-f829594d-8738-4d48-801f-5dff800a0935.json"
 	],
 	"particleSystems": [],
 	"lights": [
@@ -447,17 +446,17 @@
 			"shadowGenerator": "sun-a76adafc-c695-43b9-bc2a-a5b1a01a6419.json"
 		},
 		{
-			"json": "New Spot Light-2a858b96-4404-4231-b29b-76721362c1a9.json"
-		},
-		{
 			"json": "New Spot Light-a060a83b-b2e9-409a-a0ef-24634e45c761.json",
 			"shadowGenerator": "New Spot Light-a060a83b-b2e9-409a-a0ef-24634e45c761.json"
+		},
+		{
+			"json": "New Spot Light-2a858b96-4404-4231-b29b-76721362c1a9.json"
 		}
 	],
 	"sounds": [],
 	"morphTargetManagers": [
-		"15318.json",
 		"15324.json",
+		"15318.json",
 		"15330.json"
 	],
 	"reflectionProbes": [],
@@ -790,15 +789,15 @@
 			"checkCollisions": false,
 			"applyGravity": false,
 			"rotation": [
-				0.2850545669130693,
-				3.1573817666638324,
+				0.4425379653505694,
+				3.2096893838513334,
 				0
 			],
 			"speed": 2,
 			"position": [
-				13.179558179510689,
-				88.43336469540252,
-				139.69968796190622
+				17.388475821282224,
+				41.644274785966836,
+				46.25280944253035
 			],
 			"upVector": [
 				0,
