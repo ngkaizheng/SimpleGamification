@@ -11,6 +11,7 @@ export interface ISceneScriptMap {
 	"src/scenes/scripts/Player.ts": ScriptMap;
 	"src/scenes/scripts/RainController.ts": ScriptMap;
 	"src/scenes/scripts/Sky.ts": ScriptMap;
+	"src/scenes/scripts/Trash copy.ts": ScriptMap;
 	"src/scenes/scripts/Trash.ts": ScriptMap;
 }
 
@@ -25,5 +26,6 @@ export const scriptsMap: ISceneScriptMap = {
 	"src/scenes/scripts/Player.ts": require("./scripts/Player"),
 	"src/scenes/scripts/RainController.ts": require("./scripts/RainController"),
 	"src/scenes/scripts/Sky.ts": require("./scripts/Sky"),
+	"src/scenes/scripts/Trash copy.ts": require("./scripts/Trash copy"),
 	"src/scenes/scripts/Trash.ts": require("./scripts/Trash"),
 }

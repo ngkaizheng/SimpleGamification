@@ -12,6 +12,7 @@ exports.scriptsMap = {
     "src/scenes/scripts/Player.ts": require("./scripts/Player"),
     "src/scenes/scripts/RainController.ts": require("./scripts/RainController"),
     "src/scenes/scripts/Sky.ts": require("./scripts/Sky"),
+    "src/scenes/scripts/Trash copy.ts": require("./scripts/Trash copy"),
     "src/scenes/scripts/Trash.ts": require("./scripts/Trash"),
 };
 //# sourceMappingURL=scripts-map.js.map

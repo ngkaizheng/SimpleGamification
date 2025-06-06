@@ -451,9 +451,9 @@
 	],
 	"sounds": [],
 	"morphTargetManagers": [
-		"15330.json",
 		"15318.json",
-		"15324.json"
+		"15324.json",
+		"15330.json"
 	],
 	"reflectionProbes": [],
 	"proceduralTextures": [],
@@ -785,15 +785,15 @@
 			"checkCollisions": false,
 			"applyGravity": false,
 			"rotation": [
-				0.5551275649599443,
-				3.321009696351333,
+				0.3493255972030272,
+				2.6275898110114473,
 				0
 			],
 			"speed": 2,
 			"position": [
-				6.094462357338783,
-				27.0431101826827,
-				37.94735294760986
+				-22.742583470612388,
+				10.100731282021309,
+				51.568762577224426
 			],
 			"upVector": [
 				0,

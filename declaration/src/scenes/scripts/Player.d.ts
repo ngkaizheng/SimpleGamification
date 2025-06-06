@@ -6,6 +6,7 @@ export default class Player extends BABYLON.TransformNode {
     node: BABYLON.TransformNode;
     outerParent: BABYLON.TransformNode | null;
     character: BABYLON.Mesh | null;
+    shadowGenerator: BABYLON.ShadowGenerator | null;
     private _idleAnim;
     private _walkAnim;
     private _danceAnim;

@@ -14,6 +14,7 @@ export default class Player extends BABYLON.TransformNode {
     public outerParent: BABYLON.TransformNode | null = null;
     // @fromChildren("character")
     public character: BABYLON.Mesh | null = null;
+    public shadowGenerator: BABYLON.ShadowGenerator | null = null;
 
     // Animation Groups
     private _idleAnim: BABYLON.AnimationGroup | null = null;
@@ -150,6 +151,8 @@ export default class Player extends BABYLON.TransformNode {
             this.node.setAbsolutePosition(new BABYLON.Vector3(0, 0, 0)); // Reset position of this.node to origin
             this.node.parent = capsule;
             this.node = capsule
+            this.node.setAbsolutePosition(new BABYLON.Vector3(0, 2, 0)); // Reset position of this.node to origin
+
 
             capsule.physicsImpostor.registerBeforePhysicsStep(() => {
                 const angularVelocity = capsule.physicsImpostor.getAngularVelocity() || BABYLON.Vector3.Zero();
@@ -163,17 +166,17 @@ export default class Player extends BABYLON.TransformNode {
             });
 
             // Enable shadow casting for all meshes
-            const shadowGenerator = new BABYLON.ShadowGenerator(1024, scene.getLightByName("sun") as BABYLON.DirectionalLight);
+            this.shadowGenerator = new BABYLON.ShadowGenerator(1024, scene.getLightByName("sun") as BABYLON.DirectionalLight);
             // shadowGenerator.getShadowMap().renderList.push(...result.meshes); // Add all meshes to shadow map
-            shadowGenerator.useContactHardeningShadow = true;
-            shadowGenerator.normalBias = 0.02;
-            shadowGenerator.bias = 0.001;
-            shadowGenerator.contactHardeningLightSizeUVRatio = 0.05;
-            shadowGenerator.darkness = 0.6;
+            this.shadowGenerator.useContactHardeningShadow = true;
+            this.shadowGenerator.normalBias = 0.02;
+            this.shadowGenerator.bias = 0.001;
+            this.shadowGenerator.contactHardeningLightSizeUVRatio = 0.05;
+            this.shadowGenerator.darkness = 0.6;
 
             result.meshes.forEach((mesh) => {
                 if (mesh instanceof BABYLON.Mesh) {
-                    shadowGenerator.addShadowCaster(mesh); // Add mesh to shadow caster
+                    this.shadowGenerator.addShadowCaster(mesh); // Add mesh to shadow caster
                     mesh.receiveShadows = true; // Enable shadow receiving
 
                     if (mesh.material) {

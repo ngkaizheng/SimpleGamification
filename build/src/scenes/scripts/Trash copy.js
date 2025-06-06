@@ -51,11 +51,12 @@
 //         if (!this._isInitialized) {
 //             this._playerCollisionBox = this._scene.getMeshByName("PlayerCollisionBox") as BABYLON.Mesh;
 //             if (this._playerCollisionBox && this._playerCollisionBox.physicsImpostor) {
-//                 // Player's physics impostor is ready, initialize trash logic
-//                 this._spawnTrash();
-//                 this._setupCollisionDetection();
-//                 this._setupPickupLogic();
-//                 this._isInitialized = true; // Prevent re-initialization
+//                 this._isInitialized = true;
+//                 this._spawnTrash().then(() => {
+//                     this._setupCollisionDetection();
+//                     this._setupPickupLogic();
+//                     console.log("Trash script initialized with PlayerCollisionBox.");
+//                 });
 //                 console.log("Trash script initialized with PlayerCollisionBox.");
 //             } else {
 //                 console.log("Waiting for PlayerCollisionBox to be ready...");
@@ -98,81 +99,129 @@
 //         this._trashMeshes.forEach(trash => trash.dispose());
 //         this._trashMeshes = [];
 //         const scene = this.getScene();
-//         // const material = new BABYLON.StandardMaterial("trashMat", scene);
-//         // material.diffuseColor = new BABYLON.Color3(0.8, 0.2, 0.2);
+//         const fallbackMaterial = new BABYLON.StandardMaterial("trashMat", scene);
+//         fallbackMaterial.diffuseColor = new BABYLON.Color3(0.8, 0.2, 0.2);
 //         const shadowGenerator = scene.getLightByName("sun") as BABYLON.DirectionalLight;
 //         let shadowGen: BABYLON.ShadowGenerator | null = null;
-//         if (shadowGenerator) {
-//             shadowGen = new BABYLON.ShadowGenerator(1024, shadowGenerator);
-//             shadowGen.useContactHardeningShadow = true;
-//             shadowGen.normalBias = 0.02;
-//             shadowGen.bias = 0.001;
-//             shadowGen.contactHardeningLightSizeUVRatio = 0.05;
-//             shadowGen.darkness = 0.6;
-//         }
+//         // if (shadowGenerator) {
+//         //     shadowGen = new BABYLON.ShadowGenerator(1024, shadowGenerator);
+//         //     shadowGen.useContactHardeningShadow = true;
+//         //     shadowGen.normalBias = 0.02;
+//         //     shadowGen.bias = 0.001;
+//         //     shadowGen.contactHardeningLightSizeUVRatio = 0.05;
+//         //     shadowGen.darkness = 0.6;
+//         // }
+//         // Create an array of promises for all trash meshes
+//         const trashPromises = [];
 //         for (let i = 0; i < this._spawnCount; i++) {
 //             try {
-//                 // const result = await BABYLON.SceneLoader.ImportMeshAsync(
-//                 //     "",
-//                 //     "/assets/Model/Bottle/",
-//                 //     "plastic_bottle.glb",
-//                 //     scene
-//                 // );
-//                 BABYLON.SceneLoader.ImportMeshAsync("", "/assets/Model/Bottle/", "plastic_bottle.glb", scene).then((result) => {
-//                     const rootMesh = result.meshes[0] as BABYLON.Mesh;
-//                     rootMesh.name = `trash_${i}`;
-//                     rootMesh.position = new BABYLON.Vector3(
-//                         (Math.random() - 0.5) * this._spawnRadius,
-//                         0.5,
+//                 const promise = BABYLON.SceneLoader.ImportMeshAsync("", "assets/Model/Bottle/", "plastic_bottle.glb", scene).then((result) => {
+//                     const loadedMesh = result.meshes[0] as BABYLON.Mesh;
+//                     // Create invisible box collider
+//                     const collisionBox = BABYLON.MeshBuilder.CreateBox(`trash_${i}_box`, {
+//                         height: 1,
+//                         width: 0.5,
+//                         depth: 0.5
+//                     }, scene);
+//                     // Position the box
+//                     collisionBox.position = new BABYLON.Vector3(
+//                         (Math.random() - 0.5) * this._spawnRadius, // Reduced radius for testing
+//                         0.5, // Above ground
 //                         (Math.random() - 0.5) * this._spawnRadius
 //                     );
-//                     // Apply scaling
-//                     rootMesh.scaling = new BABYLON.Vector3(50, 50, 50);
-//                     rootMesh.position.y = 1.5; // Ensure it's above the ground
+//                     // Apply scaling to the box (overall size)
+//                     collisionBox.scaling = new BABYLON.Vector3(1, 2, 1);
 //                     // Apply rotation: x = 90°, y = random 0–360°, z = 0°
 //                     const xRotation = BABYLON.Angle.FromDegrees(90).radians();
 //                     const yRotation = BABYLON.Angle.FromDegrees(Math.random() * 360).radians();
-//                     rootMesh.rotationQuaternion = BABYLON.Quaternion.FromEulerAngles(xRotation, yRotation, 0);
-//                     // Apply material to all child meshes
+//                     collisionBox.rotationQuaternion = BABYLON.Quaternion.FromEulerAngles(xRotation, yRotation, 0);
+//                     // Configure the box
+//                     collisionBox.isVisible = false;
+//                     collisionBox.checkCollisions = true;
+//                     collisionBox.name = `trash_${i}`;
+//                     // Apply physics to the box
+//                     collisionBox.physicsImpostor = new BABYLON.PhysicsImpostor(
+//                         collisionBox,
+//                         BABYLON.PhysicsImpostor.BoxImpostor,
+//                         {
+//                             mass: 1,
+//                             friction: 0.9,
+//                             restitution: 0.0,
+//                         },
+//                         scene
+//                     );
+//                     collisionBox.physicsImpostor.registerBeforePhysicsStep(() => {
+//                         const angularVelocity = collisionBox.physicsImpostor.getAngularVelocity() || BABYLON.Vector3.Zero();
+//                         angularVelocity.x = 0;
+//                         angularVelocity.z = 0;
+//                         collisionBox.physicsImpostor.setAngularVelocity(angularVelocity);
+//                     });
+//                     // Parent the GLTF model to the box
+//                     loadedMesh.parent = collisionBox;
+//                     loadedMesh.position.set(0, -0.6, 0); // Center within box
+//                     loadedMesh.scaling = new BABYLON.Vector3(50, 25, 50); // Relative scaling
+//                     loadedMesh.rotationQuaternion = null;
+//                     loadedMesh.rotation.set(0, 0, 0);
+//                     // Apply material and shadows to GLTF meshes
 //                     result.meshes.forEach((mesh) => {
 //                         if (mesh instanceof BABYLON.Mesh) {
-//                             // mesh.material = material;
-//                             if (shadowGen) {
-//                                 shadowGen.addShadowCaster(mesh);
-//                                 mesh.receiveShadows = true;
+//                             mesh.isVisible = true;
+//                             mesh.alwaysSelectAsActiveMesh = true;
+//                             // if (!mesh.material) {
+//                             //     mesh.material = fallbackMaterial;
+//                             // }
+//                             // if (shadowGen) {
+//                             //     shadowGen.addShadowCaster(mesh);
+//                             //     mesh.receiveShadows = true;
+//                             // }
+//                             if (mesh.material instanceof BABYLON.PBRMaterial) {
+//                                 mesh.material.useLightmapAsShadowmap = true;
+//                                 mesh.material.directIntensity = 10;
 //                             }
 //                         }
 //                     });
-//                     console.log(`Loaded tra1sh model for trash_${i}`);
-//                     // Apply physics to the root mesh
-//                     this._applyPhysics(rootMesh);
-//                     this._trashMeshes.push(rootMesh);
+//                     // Debug logging
+//                     console.log(`Loaded trash model for trash_${i}`, {
+//                         boxPosition: collisionBox.position.asArray(),
+//                         boxScaling: collisionBox.scaling.asArray(),
+//                         modelPosition: loadedMesh.position.asArray(),
+//                         modelScaling: loadedMesh.scaling.asArray(),
+//                         isVisible: loadedMesh.isVisible,
+//                         childMeshes: result.meshes.length
+//                     });
+//                     // Store the collision box as the trash mesh
+//                     this._trashMeshes.push(collisionBox);
+//                 }).catch((error) => {
+//                     console.error(`Failed to load trash model for trash_${i}:`, error);
 //                 });
+//                 trashPromises.push(promise); // Add the promise to the array
 //             } catch (error) {
-//                 console.error(`Failed to load trash model for trash_${i}:`, error);
+//                 console.error(`Error setting up trash_${i}:`, error);
 //             }
 //         }
+//         await Promise.all(trashPromises); // Wait for all promises to resolve
 //     }
-//     private _applyPhysics(trash: BABYLON.Mesh): void {
-//         trash.physicsImpostor = new BABYLON.PhysicsImpostor(
-//             trash,
-//             BABYLON.PhysicsImpostor.SphereImpostor,
-//             {
-//                 mass: 0,
-//                 friction: 1.0,
-//                 restitution: 0.0
-//             },
-//             this.getScene()
-//         );
-//         trash.physicsImpostor.registerBeforePhysicsStep(() => {
-//             const angularVelocity = trash.physicsImpostor.getAngularVelocity() || BABYLON.Vector3.Zero();
-//             angularVelocity.x = 0;
-//             angularVelocity.z = 0;
-//             trash.physicsImpostor.setAngularVelocity(angularVelocity);
-//         });
-//     }
+//     // private _applyPhysics(trash: BABYLON.Mesh): void {
+//     //     trash.physicsImpostor = new BABYLON.PhysicsImpostor(
+//     //         trash,
+//     //         BABYLON.PhysicsImpostor.SphereImpostor,
+//     //         {
+//     //             mass: 0,
+//     //             friction: 1.0,
+//     //             restitution: 0.0
+//     //         },
+//     //         this.getScene()
+//     //     );
+//     //     trash.physicsImpostor.registerBeforePhysicsStep(() => {
+//     //         const angularVelocity = trash.physicsImpostor.getAngularVelocity() || BABYLON.Vector3.Zero();
+//     //         angularVelocity.x = 0;
+//     //         angularVelocity.z = 0;
+//     //         trash.physicsImpostor.setAngularVelocity(angularVelocity);
+//     //     });
+//     // }
 //     private _setupCollisionDetection(): void {
 //         if (!this._playerCollisionBox || !this._playerCollisionBox.physicsImpostor) return;
+//         console.log("Setting up collision detection for trash...");
 //         this._trashMeshes.forEach((trash) => {
 //             trash.physicsImpostor.registerOnPhysicsCollide(
 //                 this._playerCollisionBox.physicsImpostor,
@@ -183,12 +232,12 @@
 //                 }
 //             );
 //             trash.physicsImpostor.onCollideEvent = (collider, collided) => {
-//                 console.log("collided.object as BABYLON.Mesh).name:", (collided.object as BABYLON.Mesh).name);
+//                 // console.log("collided.object as BABYLON.Mesh).name:", (collided.object as BABYLON.Mesh).name);
 //                 // console.log("collided.object:", collided.object);
 //                 // console.log("collided.object.metadata:", (collided.object as BABYLON.Mesh).metadata);
 //                 if ((collided.object as BABYLON.Mesh).name !== "PlayerCollisionBox") {
 //                     trash.metadata.isCollectible = false;
-//                     console.log("Trash is not collectible anymore.");
+//                     // console.log("Trash is not collectible anymore.");
 //                 }
 //             };
 //         });
@@ -211,9 +260,13 @@
 //         });
 //         if (this._trashMeshes.length === 0) {
 //             console.log("All trash collected! Respawning...");
-//             this._spawnTrash();
-//             this._setupCollisionDetection(); // Setup collisions for new trash
-//             this._setupPickupLogic(); // Setup pickup logic for new trash
+//             // this._spawnTrash();
+//             // this._setupCollisionDetection(); // Setup collisions for new trash
+//             // this._setupPickupLogic(); // Setup pickup logic for new trash
+//             this._spawnTrash().then(() => {
+//                 this._setupCollisionDetection();
+//                 this._setupPickupLogic();
+//             });
 //         }
 //     }
 //     private _setupPickupLogic(): void {

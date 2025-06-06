@@ -2,6 +2,7 @@ import { Node } from "@babylonjs/core/node";
 import * as BABYLON from "@babylonjs/core";
 export default class Ground extends Node {
     groundNode: BABYLON.GroundMesh | null;
+    groundMat: BABYLON.StandardMaterial;
     /**
      * Override constructor.
      * @warn do not fill.

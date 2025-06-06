@@ -54,14 +54,23 @@
 			"geometryId": "ad6b245c-2a92-47da-89e7-d0e71d6f2cc7",
 			"subMeshes": null,
 			"materialId": "e98fef5f-bcbe-44ca-ae3f-9de58cb2a5a2",
-			"physicsMass": 0,
+			"physicsMass": 1,
 			"physicsFriction": 0.2,
 			"physicsRestitution": 0.2,
-			"physicsImpostor": 2,
+			"physicsImpostor": 0,
 			"metadata": {
 				"isPickable": true,
 				"script": {
-					"name": "src/scripts/GameController.ts"
+					"name": "src/scenes/scripts/Ground.ts",
+					"properties": {
+						"groundNode": {
+							"type": "Node",
+							"value": "eee4645a-645f-4faf-b10b-868d396f01f0"
+						},
+						"groundTexutre": {
+							"type": "Texture"
+						}
+					}
 				},
 				"renderingGroupId": 0,
 				"doNotExport": false,
@@ -92,12 +101,12 @@
 			"delayLoadingFile": "geometries/ad6b245c-2a92-47da-89e7-d0e71d6f2cc7.babylonbinarymeshdata",
 			"boundingBoxMaximum": [
 				150,
-				0,
+				6.960784435272217,
 				150
 			],
 			"boundingBoxMinimum": [
 				-150,
-				0,
+				-9.313725471496582,
 				-150
 			],
 			"_binaryInfo": {

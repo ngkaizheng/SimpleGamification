@@ -26,6 +26,10 @@ import { visibleInInspector } from "../decorators";
 export default class Ground extends Node {
     @visibleInInspector("Node", "Ground Node")
     public groundNode: BABYLON.GroundMesh | null = null;
+
+    // @visibleInInspector("Texture", "Ground Texture")
+    public groundMat: BABYLON.StandardMaterial = null;
+
     /**
      * Override constructor.
      * @warn do not fill.
@@ -60,6 +64,16 @@ export default class Ground extends Node {
         // // Make it repeat 10x10 times
         // groundTexture.uScale = 10;
         // groundTexture.vScale = 10;
+
+        // this.groundMat = this.groundNode.material as BABYLON.StandardMaterial;
+
+        this.groundNode.physicsImpostor = new BABYLON.PhysicsImpostor(
+            this.groundNode,
+            BABYLON.PhysicsImpostor.HeightmapImpostor,
+            { mass: 0, restitution: 0.0 },
+            this.getScene()
+        );
+        this.groundNode.receiveShadows = true;
     }
 
     /**

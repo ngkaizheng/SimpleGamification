@@ -10,6 +10,7 @@ export interface ISceneScriptMap {
     "src/scenes/scripts/Player.ts": ScriptMap;
     "src/scenes/scripts/RainController.ts": ScriptMap;
     "src/scenes/scripts/Sky.ts": ScriptMap;
+    "src/scenes/scripts/Trash copy.ts": ScriptMap;
     "src/scenes/scripts/Trash.ts": ScriptMap;
 }
 /**

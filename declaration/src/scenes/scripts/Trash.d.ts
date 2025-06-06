@@ -26,8 +26,9 @@ export default class Trash extends BABYLON.TransformNode {
     onStart(): void;
     onUpdate(): void;
     private _spawnTrash;
-    private _setupCollisionDetection;
+    private _spawnSingleTrash;
     private _handlePickup;
+    private _setupCollisionDetection;
     private _setupPickupLogic;
     /**
      * Called on the object has been disposed.

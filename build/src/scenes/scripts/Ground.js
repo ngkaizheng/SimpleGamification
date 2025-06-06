@@ -22,6 +22,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var node_1 = require("@babylonjs/core/node");
+var BABYLON = require("@babylonjs/core");
 /**
  * This represents a script that is attached to a node in the editor.
  * Available nodes are:
@@ -51,6 +52,8 @@ var Ground = /** @class */ (function (_super) {
     function Ground() {
         var _this = this;
         _this.groundNode = null;
+        // @visibleInInspector("Texture", "Ground Texture")
+        _this.groundMat = null;
         return _this;
     }
     /**
@@ -77,6 +80,9 @@ var Ground = /** @class */ (function (_super) {
         // // Make it repeat 10x10 times
         // groundTexture.uScale = 10;
         // groundTexture.vScale = 10;
+        // this.groundMat = this.groundNode.material as BABYLON.StandardMaterial;
+        this.groundNode.physicsImpostor = new BABYLON.PhysicsImpostor(this.groundNode, BABYLON.PhysicsImpostor.HeightmapImpostor, { mass: 0, restitution: 0.0 }, this.getScene());
+        this.groundNode.receiveShadows = true;
     };
     /**
      * Called each frame.

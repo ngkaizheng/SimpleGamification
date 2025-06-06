@@ -23,7 +23,11 @@
 	"name": "Hand.L",
 	"id": "38ba1fcd-c0a8-44e7-b6a5-b561b2126775",
 	"state": "",
-	"metadata": {},
+	"metadata": {
+		"script": {
+			"name": "None"
+		}
+	},
 	"type": "TransformNode",
 	"uniqueId": 7949,
 	"localMatrix": {

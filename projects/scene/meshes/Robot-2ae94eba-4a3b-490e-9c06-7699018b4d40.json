@@ -52,10 +52,6 @@
 			"overrideMaterialSideOrientation": null,
 			"isUnIndexed": false,
 			"materialId": "default material",
-			"physicsMass": 1,
-			"physicsFriction": 0.2,
-			"physicsRestitution": 0.2,
-			"physicsImpostor": 0,
 			"metadata": {
 				"isPickable": false,
 				"script": {
